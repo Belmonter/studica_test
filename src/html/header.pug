@@ -1,0 +1,67 @@
+header.header
+  .burger
+    .burger__wrapper
+      .burger__head
+        a.burger__logo(href="#")
+          img(src="img/icons/logo.svg" alt="logo")
+        .burger__profile
+      .burger__search
+      .burger__city
+      .burger__menu
+      .burger__footer
+  .header__container
+    .header__head.head-header
+      button.menu__icon.icon-menu(type="button")
+        span
+      .head-header__wrapper
+        a.head-header__logo.-ibg_contain(href="#")
+          img(src="img/icons/logo.svg" alt="logo")
+        .head-header__city.city-head(data-da=".burger__city, 875")
+          .city-head__icon._icon-city(data-city)
+          .city-head__city(data-city) Любой регион
+          .city-head__list.list-city(id="city-list")
+            .list-city__inp
+              input(id="city-input" autocomplete="off" type="text" name="city" placeholder="Регион, город, населенный пункт")
+              .inp-del._icon-close
+            .list-city__preview
+              .lds-ripple(id="loader")
+                div
+                div
+            .list-city__items(id="city-items")
+            .list-city__btn Сохранить
+        .head-header__search.search-head(data-da=".burger__search, 875")
+          input.search-head__input(type=text name="search" placeholder="Учебное заведение, специальность или профессия")
+          .search-head__icon._icon-search
+      .head-header__profile.profile-head
+        .profile-head__likes.likes-profile
+          .likes-profile__icon._icon-like
+          .likes-profile__counter 1
+        .profile-head__wrapper(data-da=".burger__profile, 875")
+          .profile-head__name Екатерина
+          .profile-head__avatar.-ibg
+            img(src="img/avatar.png" alt="avatar")
+    .header__footer.footer-header
+      .footer-header.menu
+        nav.menu__body(data-da=".burger__me, 768")
+          ul.menu__list
+            .menu__arrow._icon-arrow-right
+            li.menu__item.item-active
+              a.menu__link(href="#") Вузы
+            li.menu__item
+              a.menu__link(href="#") Колледжи
+            li.menu__item
+              a.menu__link(href="#") Техникумы
+            li.menu__item
+              a.menu__link(href="#") Училища
+            li.menu__item
+              a.menu__link(href="#") Специальности
+            li.menu__item
+              a.menu__link(href="#") Профессии
+            li.menu__item
+              a.menu__link(href="#") Отзывы
+            li.menu__item
+              a.menu__link(href="#") Учебным заведениям
+            li.menu__item
+              a.menu__link(href="#") Тест на профориентацию
+            li.menu__item.last-item
+              a.menu__link(href="#") Отзывы
